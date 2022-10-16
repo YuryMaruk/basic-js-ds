@@ -71,8 +71,8 @@ class BinarySearchTree {
       }
 
       return data < node.data ?
-        node.left = findWithin(node.left, data) :
-        node.right = findWithin(node.right, data);
+        findWithin(node.left, data) :
+        findWithin(node.right, data);
     }
   }
 
